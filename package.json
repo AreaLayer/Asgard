@@ -1,5 +1,5 @@
 {
-  "name": "mercurywallet",
+  "name": "asgard",
   "jest": {
     "moduleDirectories": [
       "node_modules",
