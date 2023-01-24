@@ -14,6 +14,7 @@ import { FeeInfo } from "./info_api";
 import { getSigHash, pubKeyTobtcAddr } from "../util";
 
 import { Network } from 'bitcoinjs-lib';
+import { Network } from 'lightningnetwork/lnd'
 import { PrepareSignTxMsg } from "./ecdsa";
 let typeforce = require('typeforce');
 
@@ -59,7 +60,7 @@ export const depositConfirm = async (
 ): Promise<StateCoin> => {
   // Get state entity fee info
   let fee_info: FeeInfo = await getFeeInfo(http_client);
-  let withdraw_fee = Math.floor((statecoin.value * fee_info.withdraw) / 10000);
+  let withdraw_fee = Math.floor((statecoin.value * fee_info.withdraw) / 100);
 
   // Calculate initial locktime
   let init_locktime = statecoin.init_locktime;
