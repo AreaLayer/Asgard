@@ -1,4 +1,4 @@
-// Mercury deposit protocol.
+// Asgard deposit protocol.
 
 // deposit():
 // 0. Initiate session - generate ID and perform authorisation
@@ -14,7 +14,7 @@ import { FeeInfo } from "./info_api";
 import { getSigHash, pubKeyTobtcAddr } from "../util";
 
 import { Network } from 'bitcoinjs-lib';
-import { Network } from 'lightningnetwork/lnd'
+import { Network } from 'lightningdevkit/ldk-sample'
 import { PrepareSignTxMsg } from "./ecdsa";
 let typeforce = require('typeforce');
 
@@ -25,7 +25,8 @@ export const depositInit = async (
   http_client: HttpClient | MockHttpClient,
   wasm_client: any,
   proof_key: string,
-  secret_key: string
+  secret_key: string,
+  invoice: string
 ): Promise<StateCoin> => {
   // Init. session - Receive shared wallet ID
   let deposit_msg1 = {
