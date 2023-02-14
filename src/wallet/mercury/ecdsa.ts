@@ -16,6 +16,7 @@ export const PROTOCOL = {
   DEPOSIT: "Deposit",
   TRANSFER: "Transfer",
   WITHDRAW: "Withdraw"
+  LDK: "LDK"
 };
 Object.freeze(PROTOCOL);
 
