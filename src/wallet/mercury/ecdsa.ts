@@ -15,8 +15,8 @@ export interface KUFinalize {
 export const PROTOCOL = {
   DEPOSIT: "Deposit",
   TRANSFER: "Transfer",
-  WITHDRAW: "Withdraw"
-  LDK: "LDK"
+  WITHDRAW: "Withdraw",
+  LIGHTNINGNETWORK: "LightningNetwork"
 };
 Object.freeze(PROTOCOL);
 
