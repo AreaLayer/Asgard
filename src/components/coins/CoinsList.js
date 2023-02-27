@@ -305,6 +305,8 @@ const CoinsList = (props) => {
     if (filterBy === STATECOIN_STATUS.IN_TRANSFER) {
       all_coins_data = filterCoinsByStatus(all_coins_data, STATECOIN_STATUS.IN_TRANSFER);
     }
+    if (filterBy === STATECOIN_STATUS.LIGHTNING_NETWORK) {
+      all_coins_data = filterCoinsByStatys(all_coins_data, STATCOIN_STATUS.LIGHTNING_NETWORK);
   }
 
   all_coins_data.sort(coinSort(sortCoin));
