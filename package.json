@@ -25,9 +25,9 @@
       "^.+\\.(ts|tsx)$": "ts-jest"
     }
   },
-  "repository": "github:layer2tech/mercury-wallet",
-  "version": "v0.8.6",
-  "license": "MIT/Apache-2.0",
+  "repository": "github: AreaLayer/Asgard",
+  "version": "1.0.0",
+  "license": "MIT",
   "homepage": "./",
   "main": "public/electron.js",
   "scripts": {
@@ -173,6 +173,7 @@
     "web-vitals": "^2.1.2",
     "web3": "^1.6.1",
     "winston": "^3.8.1"
+    "LDK": "^0.0.113"
   },
   "browserslist": {
     "production": [
@@ -187,15 +188,15 @@
     ]
   },
   "author": {
-    "name": "Mercury Wallet",
-    "email": "main@mercurywallet.com",
-    "url": "https://mercurywallet.com"
+    "name": "Asgard Wallet",
+    "email": "arealayer@gmail.com",
+    "url": "arealayer.github.io"
   },
   "build": {
     "asar": false,
-    "appId": "com.mercurywallet.wallet",
-    "productName": "mercurywallet",
-    "copyright": "Copyright © 2022 ${author}",
+    "appId": "com.asgard",
+    "productName": "asgard",
+    "copyright": "Copyright © 2023 ${author}",
     "afterSign": "./afterSignHook.js",
     "mac": {
       "category": "public.app-category.utilities",
