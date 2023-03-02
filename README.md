@@ -1,6 +1,6 @@
 # Asgard Wallet
 
-Based Mercury wallet with special mdodifications and features
+Based Mercury wallet with special modfications and features
 
 # Features
 
