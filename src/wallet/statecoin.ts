@@ -15,6 +15,7 @@ import {
   SwapID,
   SwapInfo,
   SWAP_STATUS,
+ Lightning_STATUS,
 } from "./swap/swap_utils";
 import {
   SCEAddress,
